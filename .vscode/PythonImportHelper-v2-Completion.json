@@ -1,0 +1,322 @@
+[
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "dict1",
+        "importPath": "dict1",
+        "description": "dict1",
+        "isExtraImport": true,
+        "detail": "dict1",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "cmath",
+        "description": "cmath",
+        "isExtraImport": true,
+        "detail": "cmath",
+        "documentation": {}
+    },
+    {
+        "label": "parseString",
+        "importPath": "xml.dom.expatbuilder",
+        "description": "xml.dom.expatbuilder",
+        "isExtraImport": true,
+        "detail": "xml.dom.expatbuilder",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "importPath": "list1",
+        "description": "list1",
+        "isExtraImport": true,
+        "detail": "list1",
+        "documentation": {}
+    },
+    {
+        "label": "create_dict_from_lists",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def create_dict_from_lists(keys, values):\n    \"\"\"\n    This function returns a dict made from two lists.\n    \"\"\"\n    if len(keys) != len(values):\n        raise ValueError(\"List length must be equal\")\n    return dict(zip(keys, values)) # implement me\ndef merge_two_dicts(d1, d2):\n    \"\"\"\n    Merge two Python dictionaries into one",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "merge_two_dicts",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def merge_two_dicts(d1, d2):\n    \"\"\"\n    Merge two Python dictionaries into one\n    \"\"\"\n    merge = d1.copy()\n    merge.update(d2)\n    return merge\ndef init_dict_with_values(lst, d1):\n    \"\"\"\n    Create a dict with default values for each key listed.",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "init_dict_with_values",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def init_dict_with_values(lst, d1):\n    \"\"\"\n    Create a dict with default values for each key listed.\n    \"\"\"\n    my_dict = {}\n    for key in lst:\n        my_dict[key] = d1\n    return my_dict\ndef extract_keys_to_dict(datadict, keylist):\n    \"\"\"",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "extract_keys_to_dict",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def extract_keys_to_dict(datadict, keylist):\n    \"\"\"\n    Create a dictionary by extracting the keylist from a given dictionary\n    \"\"\"\n    return {key: datadict[key] for key in keylist if key in datadict}\ndef delete_keys_from_dict(datadict, keylist):\n    \"\"\"\n    Delete a list of keys from a dictionary\n    \"\"\"\n    return {k: v for k, v in datadict.items() if k not in keylist}",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "delete_keys_from_dict",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def delete_keys_from_dict(datadict, keylist):\n    \"\"\"\n    Delete a list of keys from a dictionary\n    \"\"\"\n    return {k: v for k, v in datadict.items() if k not in keylist}\ndef check_dict_for_key(datadict, key):\n    \"\"\"\n    Check if a value exists in a dictionary\n    (NO FOR loops!)\n    \"\"\"",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "check_dict_for_key",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def check_dict_for_key(datadict, key):\n    \"\"\"\n    Check if a value exists in a dictionary\n    (NO FOR loops!)\n    \"\"\"\n    return key in datadict.values()\ndef get_key_of_min_value(ddd):\n    \"\"\"\n    Get the key of the minimum value from a dictionary\n    \"\"\"",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "get_key_of_min_value",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def get_key_of_min_value(ddd):\n    \"\"\"\n    Get the key of the minimum value from a dictionary\n    \"\"\"\n    return min(ddd, key = ddd.get)\ndef get_key_of_max_value(ddd):\n    \"\"\"\n    Get the key of the maximum value from a dictionary\n    \"\"\"\n    return max(ddd, key = ddd.get)",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "get_key_of_max_value",
+        "kind": 2,
+        "importPath": "Dicts.dict1.dict1",
+        "description": "Dicts.dict1.dict1",
+        "peekOfCode": "def get_key_of_max_value(ddd):\n    \"\"\"\n    Get the key of the maximum value from a dictionary\n    \"\"\"\n    return max(ddd, key = ddd.get)",
+        "detail": "Dicts.dict1.dict1",
+        "documentation": {}
+    },
+    {
+        "label": "Dict1Test",
+        "kind": 6,
+        "importPath": "Dicts.dict1.test_dict1",
+        "description": "Dicts.dict1.test_dict1",
+        "peekOfCode": "class Dict1Test(unittest.TestCase):\n    def test_create_dict_from_lists(self):\n        test_cases = [\n            (['a', 'b', 'c', 'd'], [1, 2, 3, 4], {'a': 1, 'b': 2, 'c': 3, 'd': 4}),\n            ([0, 1, 1, 2], [2, 0, 1, 1], {0: 2, 1: 1, 2: 1}),\n            ([\"foo\", \"bar\", \"wow\", \"baz\"],[\"wow\", \"foo\", \"bar\", \"wow\"], {'bar': 'foo', 'baz': 'wow', 'foo': 'wow', 'wow': 'bar'}),\n        ]\n        for kkk, vvv, expected in test_cases:\n            with self.subTest(f\"{kkk} {vvv} -> {expected}\"):\n                self.assertEqual(expected, dict1.create_dict_from_lists(kkk,vvv))",
+        "detail": "Dicts.dict1.test_dict1",
+        "documentation": {}
+    },
+    {
+        "label": "create_list_from_tuple",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def create_list_from_tuple(t):\n    \"\"\"\n    This function takes a tuple of elements and returns a list containing those elements of the tuple.\n    \"\"\" \n    return list(t) # implement me\ndef drop_last(lst):\n    \"\"\"\n    This function takes a list and returns a list with the last item removed.\n    \"\"\"\n    return lst[:-1]  # implement me",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "drop_last",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def drop_last(lst):\n    \"\"\"\n    This function takes a list and returns a list with the last item removed.\n    \"\"\"\n    return lst[:-1]  # implement me\ndef drop_first_two(lst):\n    \"\"\"\n    This function takes a list and returns a list with the first two items removed.\n    \"\"\"\n    return lst[2:]",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "drop_first_two",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def drop_first_two(lst):\n    \"\"\"\n    This function takes a list and returns a list with the first two items removed.\n    \"\"\"\n    return lst[2:]\ndef drop_mangle(lst):\n    \"\"\"\n    This function takes a list and returns a list with the first two items AND last item removed.\n    \"\"\"\n    return lst[2: -1]",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "drop_mangle",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def drop_mangle(lst):\n    \"\"\"\n    This function takes a list and returns a list with the first two items AND last item removed.\n    \"\"\"\n    return lst[2: -1]\ndef add_item_front(lst, a):\n    \"\"\"\n    This function takes a list and an item,\n    returning the list with the item prepended to the list\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "add_item_front",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def add_item_front(lst, a):\n    \"\"\"\n    This function takes a list and an item,\n    returning the list with the item prepended to the list\n    \"\"\"\n    return [a] + lst\ndef add_item_end(lst, a):\n    \"\"\"\n    This function takes a list and an item,\n    returning the list with the item appended to the list",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "add_item_end",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def add_item_end(lst, a):\n    \"\"\"\n    This function takes a list and an item,\n    returning the list with the item appended to the list\n    \"\"\"\n    return lst + [a]\ndef add_list_to_list(lsta, lstb):\n    \"\"\"\n    This function takes two lists and appends one to the other,\n    returning a list",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "add_list_to_list",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def add_list_to_list(lsta, lstb):\n    \"\"\"\n    This function takes two lists and appends one to the other,\n    returning a list\n    \"\"\"\n    return lsta + lstb  # implement me\ndef list_and_list_to_tuple(lsta, lstb):\n    \"\"\"\n    This function takes two lists and returns a tuple containing the two lists\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_and_list_to_tuple",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_and_list_to_tuple(lsta, lstb):\n    \"\"\"\n    This function takes two lists and returns a tuple containing the two lists\n    \"\"\"\n    return (lsta, lstb)\ndef list_and_list_to_list(lsta, lstb):\n    \"\"\"\n    This function takes two lists and returns a list containing the two lists\n    \"\"\"\n    return [lsta, lstb]",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_and_list_to_list",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_and_list_to_list(lsta, lstb):\n    \"\"\"\n    This function takes two lists and returns a list containing the two lists\n    \"\"\"\n    return [lsta, lstb]\n##\n##\n##\ndef list_from_range(n):\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_from_range",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_from_range(n):\n    \"\"\"\n    This function returns list with 0..n as integers in a list\n    \"\"\"\n    return list(range(n))\ndef list_from_range2(n, m):\n    \"\"\"\n    This function returns list with n..m (without m) as integers in a list\n    \"\"\"\n    return list(range(n, m))",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_from_range2",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_from_range2(n, m):\n    \"\"\"\n    This function returns list with n..m (without m) as integers in a list\n    \"\"\"\n    return list(range(n, m))\ndef list_from_range3(n, m):\n    \"\"\"\n    This function returns list with n..m (including m(!)) as integers in a list\n    \"\"\"\n    return list(range(n, m+1))",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_from_range3",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_from_range3(n, m):\n    \"\"\"\n    This function returns list with n..m (including m(!)) as integers in a list\n    \"\"\"\n    return list(range(n, m+1))\ndef list_from_range4(n, m):\n    \"\"\"\n    This function returns list with n..m (WITHOUT n and including m) as integers in a list\n    \"\"\"\n    return list(range(n+1, m+1))",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_from_range4",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_from_range4(n, m):\n    \"\"\"\n    This function returns list with n..m (WITHOUT n and including m) as integers in a list\n    \"\"\"\n    return list(range(n+1, m+1))\ndef list_from_range_by(n, step):\n    \"\"\"\n    This function returns list with 0..n as integers by step in a list\n    (read the test)\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "list_from_range_by",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def list_from_range_by(n, step):\n    \"\"\"\n    This function returns list with 0..n as integers by step in a list\n    (read the test)\n    \"\"\"\n    return list(range(0,n,step))\ndef rev_list(lst):\n    \"\"\"\n    This function returns list which is a reverse of the argument list\n    (read the test)",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "rev_list",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def rev_list(lst):\n    \"\"\"\n    This function returns list which is a reverse of the argument list\n    (read the test)\n    \"\"\"\n    return lst[::-1]\ndef concat_list_indexwise(lst1, lst2):\n    \"\"\"\n    Write a program to add two lists index-wise. \n    Create a new list that contains the 0th index item from both of the lists, ",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "concat_list_indexwise",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def concat_list_indexwise(lst1, lst2):\n    \"\"\"\n    Write a program to add two lists index-wise. \n    Create a new list that contains the 0th index item from both of the lists, \n    then the 1st index item, and so on till the last element. \n    Any leftover items will get added at the end of the new list.\n    \"\"\"\n    return [lst1[i] + lst2[i] for i in range(len(lst1))]\ndef square_each_item(lst):\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "square_each_item",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def square_each_item(lst):\n    \"\"\"\n    This function returns list which each item in argument list has been squared\n    (read the test)\n    \"\"\"\n    return [x**2 for x in lst]\ndef remove_empty_strs(lst):\n    \"\"\"\n    Remove empty strings from the list of strings\n    \"\"\"",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "remove_empty_strs",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def remove_empty_strs(lst):\n    \"\"\"\n    Remove empty strings from the list of strings\n    \"\"\"\n    return [x for x in lst if x != '']\ndef remove_item_from(lst, aaa):\n    \"\"\"\n    Remove all occurrences of a specific item from a list.\n    \"\"\"\n    return [x for x in lst if x != aaa]",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "remove_item_from",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def remove_item_from(lst, aaa):\n    \"\"\"\n    Remove all occurrences of a specific item from a list.\n    \"\"\"\n    return [x for x in lst if x != aaa]\ndef leave_item_in(lst, aaa):\n    \"\"\"\n    Leave all occurrences of a specific item in a list.\n    \"\"\"\n    return [x for x in lst if x == aaa]",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "leave_item_in",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def leave_item_in(lst, aaa):\n    \"\"\"\n    Leave all occurrences of a specific item in a list.\n    \"\"\"\n    return [x for x in lst if x == aaa]\ndef length_of(lst):\n    \"\"\"\n    return the length of the list\n    \"\"\"\n    return len(lst)",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "length_of",
+        "kind": 2,
+        "importPath": "Lists.list1.list1",
+        "description": "Lists.list1.list1",
+        "peekOfCode": "def length_of(lst):\n    \"\"\"\n    return the length of the list\n    \"\"\"\n    return len(lst)",
+        "detail": "Lists.list1.list1",
+        "documentation": {}
+    },
+    {
+        "label": "List1Test",
+        "kind": 6,
+        "importPath": "Lists.list1.test_list1",
+        "description": "Lists.list1.test_list1",
+        "peekOfCode": "class List1Test(unittest.TestCase):\n    def test_create_list_from_tuple(self):\n        test_cases = [\n            ((1, 2, 3), [1,2,3]),\n            ((1,), [1]),\n            ((), []),\n            ((\"foo\", \"bar\"), [\"foo\", \"bar\"]),\n        ]\n        for tt_in, expected in test_cases:\n            with self.subTest(f\"{tt_in} -> {expected}\"):",
+        "detail": "Lists.list1.test_list1",
+        "documentation": {}
+    }
+]
